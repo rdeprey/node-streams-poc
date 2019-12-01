@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Upload a File
+
+        form(method='POST' action='/' enctype="multipart/form-data")
+          div.form-group
+            label(for='file') File:
+            input#name.form-control(type='file', name='file')
+          button.btn.btn-primary(type='submit') Upload
